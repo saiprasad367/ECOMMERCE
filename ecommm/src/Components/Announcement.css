@@ -1,0 +1,49 @@
+.announce {
+  width: 100%;
+  background: #000;
+  text-align: center;
+  padding: 10px 15px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.announce p {
+  color: #fff;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: clamp(12px, 2.5vw, 20px); /* Responsive Text */
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 0.7s ease-in-out forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.7s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-15px) scale(0.95); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; transform: translateY(0) scale(1); }
+  100% { opacity: 0; transform: translateY(15px) scale(1.05); }
+}
+
+/* Extra Mobile Enhancements */
+@media (max-width: 480px) {
+  .announce {
+    padding: 8px 10px;
+  }
+  .announce p {
+    letter-spacing: 0.5px;
+  }
+}

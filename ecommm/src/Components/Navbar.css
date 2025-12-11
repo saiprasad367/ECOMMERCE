@@ -1,0 +1,13 @@
+.nav{
+
+    display: flex;
+    justify-content: center;
+    color: white;
+
+}
+.nav h3{
+    color: white;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}

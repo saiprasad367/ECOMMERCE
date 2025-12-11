@@ -1,0 +1,66 @@
+body{
+  background-color: black;
+}
+.announce{
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.loader-content {
+  text-align: center;
+}
+
+/* Full screen preloader container */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000; /* background color while loading */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Optional: scale CircularText for mobile devices */
+.preloader-text {
+  width: 180px;
+  height: 180px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .preloader-text {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .preloader-text {
+    width: 100px;
+    height: 100px;
+  }
+}
