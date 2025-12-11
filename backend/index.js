@@ -19,5 +19,10 @@ app.use("/api/admin/products", require("./routes/adminProducts"));
 
 
 
+//cart
+const cartRoutes = require("./routes/cartRoutes");
+app.use("/api/cart", cartRoutes);
+
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
